@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Solve - FizzBuzz";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Solve">
+    <br />
+    <br />
+    <div class="row text-center">
+        <div class="col">
+            <p>Input 1st Multiple of:</p>
+            <input type="text" name="input1" />
+        </div>
+        <div class="col">
+            <p>Input 2nd Multiple of:</p>
+            <input type="text" name="input2" />
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="row text-center">
+        <div class="col">
+            <p>Input Start of Range:</p>
+            <input type="text" name="range1" />
+        </div>
+        <div class="col">
+            <p>Input End of Range:</p>
+            <input type="text" name="range2" />
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col">
+            <button type="submit" class="btn btn-outline-secondary" style="width: 100%">Find FizzBuzz</button>
+        </div>
+
+    </div>
+</form>
+<br />
+<hr />
+<br />
+<div class="row">
+    <div class="col">
+        Your submission has output: @ViewData["Output"]
+    </div>
+</div>
